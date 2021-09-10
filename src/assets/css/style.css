@@ -1,0 +1,66 @@
+/* #app */
+@-webkit-keyframes app {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes app {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-animation: app 3s forwards;
+          animation: app 3s forwards;
+}
+
+@-webkit-keyframes bg {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1500px, 0, 0);
+            transform: translate3d(-1500px, 0, 0);
+  }
+}
+
+@keyframes bg {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1500px, 0, 0);
+            transform: translate3d(-1500px, 0, 0);
+  }
+}
+
+#app .bg {
+  height: 100%;
+  background-size: 1200px auto;
+  width: 1500px;
+  background-image: url(./../images/bg.jpg);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  -webkit-animation: bg 5s linear infinite;
+          animation: bg 5s linear infinite;
+}
+/*# sourceMappingURL=style.css.map */
